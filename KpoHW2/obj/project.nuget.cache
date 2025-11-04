@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FW6pxZpgq2I=",
+  "success": true,
+  "projectFilePath": "/Users/user/RiderProjects/KpoHW2/KpoHW2/KpoHW2.csproj",
+  "expectedPackageFiles": [
+    "/Users/user/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.10/microsoft.extensions.dependencyinjection.9.0.10.nupkg.sha512",
+    "/Users/user/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.10/microsoft.extensions.dependencyinjection.abstractions.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
