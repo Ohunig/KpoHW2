@@ -1,4 +1,4 @@
-namespace KpoHW2.Infrastructure;
+namespace KpoHW2.Application.Ports;
 
 public interface IIdManager
 {

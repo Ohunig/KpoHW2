@@ -1,7 +1,9 @@
 using KpoHW2.Application.Facades;
+using KpoHW2.Application.Ports;
 using KpoHW2.Infrastructure;
 using KpoHW2.Infrastructure.Factories;
 using KpoHW2.Infrastructure.Persistence;
+using KpoHW2.Presentation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace KpoHW2;
@@ -26,9 +28,13 @@ public static class CompositionRoot
         services.AddSingleton<ICategoryRepository, StandartCategoryRepository>();
         services.AddSingleton<IOperationRepository, StandartOperationRepository>();
 
-        services.AddTransient<BankAccountFacade>();
-        services.AddTransient<CategoryFacade>();
-        services.AddTransient<OperationFacade>();
+        services.AddSingleton<BankAccountFacade>();
+        services.AddSingleton<CategoryFacade>();
+        services.AddSingleton<OperationFacade>();
+
+        services.AddTransient<IConsoleManager, StandardConsoleManager>();
+
+        services.AddSingleton<NavigationController>();
         
         return services.BuildServiceProvider();
     }
