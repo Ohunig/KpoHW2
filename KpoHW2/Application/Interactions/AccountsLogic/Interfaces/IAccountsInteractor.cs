@@ -10,6 +10,7 @@ namespace KpoHW2.Application.Interactions.AccountsLogic.Interfaces;
 public interface IAccountsInteractor
 {
     public void ToStart(Model.EndAction.Request request);
+    
     public void GetCommand(Model.GettingCommand.Request request);
     
     public string GetAccounts(Model.GettingCommand.Request request);

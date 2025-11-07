@@ -1,5 +1,3 @@
-namespace KpoHW2.Application.Interactions.AccountsLogic.Commands.Decorators;
-
 public abstract class BaseDecorator(ICommand wrappee) : ICommand
 {
     private ICommand wrappee = wrappee;

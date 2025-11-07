@@ -6,7 +6,7 @@ public class StandartCategoryRepository : ICategoryRepository
 {
     private class Constants
     {
-        public static readonly String idError = "Account with this id doesn't exist";
+        public static readonly String idError = "Category with this id doesn't exist";
     }
     
     private Dictionary<int, Category> categories = new Dictionary<int, Category>();

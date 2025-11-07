@@ -48,6 +48,7 @@ public class CategoryFacade
 
     /// <summary>
     /// Изменяет категорию с указанным id
+    /// Изменяет только имя так как тип должен быть фиксированным (логично же)
     /// </summary>
     /// <param name="id">id категории</param>
     /// <param name="name">Новое имя или nil если менять не нужно</param>

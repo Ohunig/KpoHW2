@@ -1,4 +1,3 @@
-using KpoHW2.Application.Interactions.AccountsLogic.Commands;
 using KpoHW2.Application.Interactions.AccountsLogic.Interfaces;
 using Model = KpoHW2.Application.Interactions.AccountsLogic.Commands.Interactions.AccountsLogic.AccountsModel;
 

@@ -6,6 +6,12 @@ using Model = KpoHW2.Application.Interactions.AccountsLogic.Commands.Interaction
 
 namespace KpoHW2.Application.Interactions.AccountsLogic.Commands.Interactions.AccountsLogic;
 
+/// <summary>
+/// Интерактор экрана аккаунтов
+/// Отвечает за прикладную логику экрана
+/// </summary>
+/// <param name="presenter"></param>
+/// <param name="bankAccountFacade"></param>
 public class AccountsInteractor(IAccountsPresenter presenter, BankAccountFacade bankAccountFacade) : IAccountsInteractor
 {
     private BankAccountFacade bankAccountFacade = bankAccountFacade;
@@ -22,7 +28,7 @@ public class AccountsInteractor(IAccountsPresenter presenter, BankAccountFacade 
     }
 
     /// <summary>
-    /// Передаёт команду презентеру
+    /// Передаёт нужную команду презентеру
     /// </summary>
     /// <param name="request">Запрос от UI</param>
     public void GetCommand(AccountsModel.GettingCommand.Request request)

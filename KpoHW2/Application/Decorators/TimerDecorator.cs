@@ -1,8 +1,6 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace KpoHW2.Application.Interactions.AccountsLogic.Commands.Decorators;
-
 public class TimerDecorator(ICommand wrappee) : BaseDecorator(wrappee)
 {
     public override string Execute()

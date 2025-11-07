@@ -5,6 +5,7 @@ namespace KpoHW2.Presentation;
 
 /// <summary>
 /// Абстрактный вью контроллер
+/// Отвечает за UI
 /// </summary>
 public abstract class ViewController
 {

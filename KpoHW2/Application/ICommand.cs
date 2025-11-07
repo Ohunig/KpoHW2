@@ -1,4 +1,3 @@
-namespace KpoHW2.Application.Interactions.AccountsLogic.Commands;
 
 public interface ICommand
 {

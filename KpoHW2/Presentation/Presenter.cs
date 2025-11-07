@@ -2,6 +2,7 @@ namespace KpoHW2.Presentation;
 
 /// <summary>
 /// Абстрактный презентер (+ координатор)
+/// Отвечает за преобразование данных в пригодный для UI вид
 /// </summary>
 public abstract class Presenter
 {

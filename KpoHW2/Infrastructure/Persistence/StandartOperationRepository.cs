@@ -6,7 +6,7 @@ public class StandartOperationRepository : IOperationRepository
 {
     private class Constants
     {
-        public static readonly String idError = "Account with this id doesn't exist";
+        public static readonly String idError = "Operation with this id doesn't exist";
     }
 
     private Dictionary<int, Operation> operations = new Dictionary<int, Operation>();
