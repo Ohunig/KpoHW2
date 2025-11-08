@@ -29,16 +29,18 @@ public class MainScreenViewController : ViewController
     private void ConfigureUI()
     {
         StringBuilder message = new StringBuilder();
+        message.AppendLine("Main Menu");
         message.AppendLine("1. Working with accounts");
         message.AppendLine("2. Working with categories");
         message.AppendLine("3. Working with operations");
+        message.AppendLine("4. Import");
         Console.WriteLine(message.ToString());
     }
 
     public override void HandleUserAction()
     {
         int? number = consoleManager.GetIntResponse("Choose number: ");
-        if (number == null || number.Value < 1 || number.Value > 3)
+        if (number == null || number.Value < 1 || number.Value > 4)
         {
             NextScreenAttemptError();
         }

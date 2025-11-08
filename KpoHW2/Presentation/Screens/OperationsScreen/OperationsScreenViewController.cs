@@ -82,7 +82,7 @@ public class OperationsScreenViewController(IOperationsInteractor operationsInte
             default:
                 consoleManager.Print(Constants.NoCommandError);
                 consoleManager.WaitButtonPress();
-                operationsInteractor.ToStart(new Model.EndAction.Request());
+                ViewDidLoad();
                 break;
         }
     }

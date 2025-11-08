@@ -1,0 +1,5 @@
+[
+  { "Name": "Groceries", "CategoryType": "Expenditure" },
+  { "Name": "Salary", "CategoryType": "Income" },
+  { "Name": "Utilities", "CategoryType": "Expenditure" }
+]

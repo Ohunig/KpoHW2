@@ -54,6 +54,7 @@ public class CategoriesScreenViewController(ICategoriesInteractor categoriesInte
     public void ConfigureUI()
     {
         StringBuilder message = new StringBuilder();
+        message.AppendLine("Categories Menu");
         message.AppendLine("1. Show categories");
         message.AppendLine("2. Add new category");
         message.AppendLine("3. Update category");
@@ -82,7 +83,7 @@ public class CategoriesScreenViewController(ICategoriesInteractor categoriesInte
             default:
                 consoleManager.Print(Constants.NoCommandError);
                 consoleManager.WaitButtonPress();
-                categoriesInteractor.ToStart(new Model.EndAction.Request());
+                ViewDidLoad();
                 break;
         }
     }

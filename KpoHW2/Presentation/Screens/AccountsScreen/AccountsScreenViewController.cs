@@ -53,6 +53,7 @@ public class AccountsScreenViewController(IAccountsInteractor accountsInteractor
     public void ConfigureUI()
     {
         StringBuilder message = new StringBuilder();
+        message.AppendLine("Accounts Menu");
         message.AppendLine("1. Show accounts");
         message.AppendLine("2. Add new account");
         message.AppendLine("3. Update account");
@@ -81,7 +82,7 @@ public class AccountsScreenViewController(IAccountsInteractor accountsInteractor
             default:
                 consoleManager.Print(Constants.NoCommandError);
                 consoleManager.WaitButtonPress();
-                accountsInteractor.ToStart(new Model.EndAction.Request());
+                ViewDidLoad();
                 break;
         }
     }

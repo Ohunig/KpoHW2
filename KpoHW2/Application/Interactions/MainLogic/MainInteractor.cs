@@ -22,6 +22,9 @@ public class MainInteractor : IMainInteractor
             case 3:
                 presenter.PresentNextScreen(MainModel.NextScreen.Response.OperationsSelected);
                 break;
+            case 4:
+                presenter.PresentNextScreen(MainModel.NextScreen.Response.ImportSelected);
+                break;
         }
     }
 }

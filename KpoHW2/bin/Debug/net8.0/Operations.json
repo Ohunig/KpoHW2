@@ -1,0 +1,16 @@
+[
+  {
+    "Type": "Expenditure",
+    "BankAccountId": 1,
+    "CategoryId": 1,
+    "Amount": 2500,
+    "Description": "Supermarket shopping"
+  },
+  {
+    "Type": "Income",
+    "BankAccountId": 2,
+    "CategoryId": 2,
+    "Amount": 20000,
+    "Description": "Monthly salary"
+  }
+]

@@ -13,7 +13,8 @@ public static class MainModel
         {
             AccountsSelected,
             CategoriesSelected,
-            OperationsSelected
+            OperationsSelected,
+            ImportSelected
         }
     }
 }

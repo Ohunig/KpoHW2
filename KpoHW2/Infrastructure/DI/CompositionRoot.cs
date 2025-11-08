@@ -1,4 +1,6 @@
 using KpoHW2.Application.Facades;
+using KpoHW2.Application.Import.Importers.AccountImporters;
+using KpoHW2.Application.Import.Importers.OperationImporters;
 using KpoHW2.Application.Ports;
 using KpoHW2.Infrastructure;
 using KpoHW2.Infrastructure.Factories;
@@ -35,6 +37,13 @@ public static class CompositionRoot
         services.AddTransient<IConsoleManager, StandardConsoleManager>();
 
         services.AddSingleton<NavigationController>();
+        
+        services.AddTransient<AccountJsonImporter>();
+        services.AddTransient<AccountCsvImporter>();
+        services.AddTransient<CategoryJsonImporter>();
+        services.AddTransient<CategoryCsvImporter>();
+        services.AddTransient<OperationJsonImporter>();
+        services.AddTransient<OperationCsvImporter>();
         
         return services.BuildServiceProvider();
     }
